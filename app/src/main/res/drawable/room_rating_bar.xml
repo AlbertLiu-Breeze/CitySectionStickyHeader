@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+   This is the rating bar drawable that is used to show a room num.
+
+-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/background"
+        android:drawable="@mipmap/red"></item>
+
+    <item android:id="@+id/secondaryProgress"
+        android:drawable="@mipmap/red"></item>
+
+    <item android:id="@+id/progress"
+        android:drawable="@mipmap/green"></item>
+
+</layer-list>

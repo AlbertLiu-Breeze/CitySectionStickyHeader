@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jusfoun.refreshscrollviewdemo.ui.SelectCityActivity">
+
+    <RelativeLayout
+        android:id="@+id/edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+
+        >
+
+        <EditText
+            android:id="@+id/search_edittext"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/seabar_input"
+            android:cursorVisible="false"
+            android:hint="This is a test"
+
+            android:drawableLeft="@mipmap/search_bar_icon_normal"
+            android:drawablePadding="5dp"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_area_list"
+        android:layout_below="@id/edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_text_layout"
+        >
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.jusfoun.refreshscrollviewdemo.ui.JusfounSidebar
+            android:id="@+id/sidebar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"/>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.jusfoun.refreshscrollviewdemo.ui.HeadView
+        android:id="@+id/headview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.jusfoun.refreshscrollviewdemo.ui.RatingBarView
+        android:id="@+id/custom_ratingbar"
+        android:layout_below="@id/headview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:starCount="5"
+        app:starEmpty="@mipmap/green"
+        app:starFill="@mipmap/red"
+        app:starImageSize="50dp"/>
+
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/rotate_header_web_view_frame"
+        android:layout_below="@id/custom_ratingbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:ptr_duration_to_close="200"
+        app:ptr_duration_to_close_header="1000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7">
+
+        <ScrollView
+            android:id="@+id/rotate_header_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="12.5dp"
+
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="text 1"
+
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_margin="12.5dp"
+
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="text 2"
+
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_margin="12.5dp"
+
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="text 3"
+
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</RelativeLayout>

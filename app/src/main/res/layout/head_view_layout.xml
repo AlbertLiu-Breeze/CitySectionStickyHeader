@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/abc_search_url_text_normal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/scope_layout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        >
+        <TextView
+            android:id="@+id/scope_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="beijing"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:drawableRight="@mipmap/downunfold"
+            android:drawablePadding="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:id="@+id/search_edittext"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/seabar_input"
+            android:cursorVisible="false"
+            android:hint="This is a test"
+
+            android:drawableLeft="@mipmap/search_bar_icon_normal"
+            android:drawablePadding="5dp"
+
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/show_popu_layout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+
+        >
+        <ImageView
+            android:id="@+id/show_popu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/add"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
