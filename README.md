@@ -1,0 +1,2 @@
+# CitySectionStickyHeader
+仿大众点评城市列表选择，搜索仅支持拼音全拼匹配
